@@ -1,0 +1,230 @@
+/* 1.Posicionamiento
+2.Modelo caja (box model)
+3.Tipografía
+4.visuales
+5. Otros
+ */
+:root {
+    --back-color: #eeeeee;
+    --title-price-color:#dddddd;
+    --yellow-color:#f1c40f;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--back-color);
+}
+header{
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 20px 0px;
+    font-weight: 400;
+    position: fixed;
+    background-color: var(--back-color);
+}
+header img{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 0 50px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+#form{
+    margin-bottom: 40px;
+}
+#form h2 {
+    margin-bottom: 20px;
+}
+#form #email {
+    padding: 0 10px;
+    width: 90%;
+    height: 30px;
+}
+#form #submit {
+    margin-top: 10px;
+    width: 50%;
+    height: 30px;
+    font-weight: bold;
+    background-color: var(--yellow-color);
+    border: none;
+}
+.icon i{
+    display: none;
+
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 0px 5px;
+    justify-content: center;
+    text-align: center;
+}
+.desc h2{
+    margin-bottom: 10px;
+}
+.how-is-work{
+    margin-bottom: 15px;
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-price{
+    display: flex;
+    background-color: var(--title-price-color);
+    font-weight: bold;
+    height: 50px;
+    place-items: center;
+    justify-content: center;
+}
+.product{
+    height: 300px;
+    border: 1.5px solid black ;
+    border-radius: 5px;
+    margin: 5px 2px;
+}
+.product h2{
+    margin: 15px 0px;
+}
+.product li{
+    padding: 5px;
+    list-style-type: none;
+}
+.product ol{
+    margin-bottom: 20px;
+}
+.product button{
+    height: 35px;
+    width: 100px;
+    background-color: var(--yellow-color);
+    border: none;
+}
+footer{
+    background-color: var(--title-price-color);
+    padding: 20px;
+
+}
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+footer li{
+    padding: 0px 10px;
+    list-style-type: none
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #444;
+}
+@media (min-width: 600px) {
+    header{
+        top: 0%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 40px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        margin-left: 20px;
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        padding: 0 10px;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 80px;
+    }
+    .desc {
+        display: grid;
+        grid-template-rows: 30px 60px;
+        height: 100px;
+        width: 95%;
+        justify-content: center;
+        align-content: center;
+        text-align: start;
+    }
+    .info-container{
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .desc h2{
+        margin-bottom: 0px;
+    }
+    .icon{
+        display: flex;
+        padding-bottom: 20px ;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon i{
+        display: block;
+        font-size: 5rem;
+        color: #ff8c00;
+    }
+    .icon:nth-child(3){
+        transform: scaleX(-1);;
+    }
+    .how-is-work iframe{
+        width: 600px;
+    }
+    #pricing {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 400px));
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+}
