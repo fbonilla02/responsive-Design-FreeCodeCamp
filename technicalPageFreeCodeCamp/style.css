@@ -4,9 +4,9 @@
 4.visuales
 5. Otros
  */
- :root {
-     --code-color: #f7f7f7;
-} 
+:root {
+    --code-color: #f7f7f7;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -34,6 +34,7 @@ nav .nav-link {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 #navbar ul{
     width: 100%;
 }
@@ -78,3 +79,26 @@ code {
     font-size: 1.2rem;
 }
 
+@media (min-width: 600px) {
+    body{
+        display: grid;
+        grid-template-columns: 280px 1fr;
+    }
+    nav header{
+        position: fixed;
+        width: 240px;
+        height: 40px;
+        text-align: center;
+        
+    }
+    nav{
+        border-right: 4px solid #99a2a2;
+    }
+    nav .nav-link {
+        position: fixed;
+        margin-top: 80px;
+        width: 276px;
+        height: 100%;
+        border: none;
+    }
+}
