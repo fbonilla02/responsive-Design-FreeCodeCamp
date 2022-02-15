@@ -67,7 +67,10 @@ body{
     height: 100%;
 }
 #projects h2{
+    font-size: 3.8rem;
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto 6rem auto;
     margin-bottom: 40px;
     border-bottom: 1px solid white;
 }
@@ -98,7 +101,7 @@ body{
     display: flex;
     width: 120px;
     height: 40px;
-    margin: 0 auto;
+    margin: 40px auto 0px;
     background-color: var(--color-project);
     color: white;
     border: none;
@@ -165,5 +168,44 @@ body{
     }
     #navbar li{
         padding-left: 40px;
+    }
+    .projects-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        width: 100%;
+    }
+    .networks{
+        display: flex;
+        justify-content: center;
+        padding: 30px 10px;
+        height: 350px;
+    }
+    .networks h2{
+        font-size: 6rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    .footer p{
+        margin: 30px;
+    }
+    .footer p{
+        margin: 30px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .projects-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 5rem;
+        width: 60%;
     }
 }
