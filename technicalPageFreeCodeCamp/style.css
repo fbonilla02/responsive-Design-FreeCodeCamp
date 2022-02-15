@@ -5,11 +5,8 @@
 5. Otros
  */
  :root {
-    --back-color: #eeeeee;
-    --title-price-color:#dddddd;
-    --yellow-color:#f1c40f;
-
-}
+     --code-color: #f7f7f7;
+} 
 *{
     box-sizing: border-box;
     padding: 0;
@@ -17,9 +14,67 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
-    font-size: 1.6rem;
-    background-color: var(--back-color);
+    font-size: 1.5rem;
 }
+nav header{
+    margin: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav .nav-link {
+    display: flex;
+    width: 98%;
+    height: 207px;
+    border: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar ul{
+    width: 100%;
+}
+#navbar li{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid;
+}
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 25px;
+}
+main{
+    margin-bottom: 100px;
+}
+.main-section header{
+    margin: 20px 0px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.main-section{
+    padding: 0px 20px;
+}
+.main-section ul{
+    margin-top: 10px;
+    padding-left: 50px;
+
+}
+
+code {
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    background-color: var(--code-color);
+    font-size: 1.2rem;
+}
+
